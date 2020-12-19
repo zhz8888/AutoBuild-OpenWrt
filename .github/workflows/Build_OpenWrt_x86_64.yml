@@ -73,7 +73,7 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
 
-    #- name: Import external feeds
+    #- name: Import External Feeds
     #  working-directory: ./openwrt
     #  run: |
     #    git clone https://github.com/xiaorouji/openwrt-package.git package/lienol
@@ -107,6 +107,6 @@ jobs:
     - name : Upload Artifact
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt
+        name: OpenWrt-x86_64
         path: OpenWrt-x86_64.tar.xz
         if-no-files-found: error
