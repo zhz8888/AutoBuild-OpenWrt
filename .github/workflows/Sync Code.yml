@@ -9,21 +9,24 @@
 name: Sync Code from eSir Autobuild Script
 
 on:
+#  release:
+#    types: [published]
 #  push:
-#    branches: 
+#    branches:
 #      - master
-
+#    paths:
+#      - '.config'
 #  schedule:
-#    - cron: 0 19 * * *
+#    - cron: 0 8 * * 5
+#  watch:
+#    types: [started]
 
 jobs:
-
   merge:
-
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
+    if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-
     - name: Checkout
       uses: actions/checkout@v2
       with:
