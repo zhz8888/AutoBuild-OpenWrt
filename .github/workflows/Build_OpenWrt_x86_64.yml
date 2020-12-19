@@ -7,17 +7,16 @@
 
 name: Build_OpenWrt_x86_64
 
-on: 
-  #release:
-  #  types: [published]
-
-  #push:
-  #  branches: 
-  #    - master
-
-  #schedule:
-  #  - cron: 0 8 * * 5
-  
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
   watch:
     types: [started]
 
