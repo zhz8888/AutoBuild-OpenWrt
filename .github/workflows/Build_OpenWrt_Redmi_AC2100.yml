@@ -96,6 +96,7 @@ jobs:
     - name: Zip OpenWrt Data
       run: |
         tar -Jcvf OpenWrt-Redmi_AC2100.tar.xz openwrt/bin
+
     - name : Upload Artifact
       uses: actions/upload-artifact@master
       with:
