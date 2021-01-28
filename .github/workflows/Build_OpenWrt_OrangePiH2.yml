@@ -81,7 +81,7 @@ jobs:
 
     - name: Configuration Customization - Build_OpenWrt_OrangePiH2
       env:
-        CONFIG_FILE: 'OrangePiH2.config'
+        CONFIG_FILE: 'OrangePiH2-2.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
